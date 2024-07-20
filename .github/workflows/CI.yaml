@@ -1,7 +1,10 @@
 name: Terraform CI
 
 on: push
-  
+
+env:            
+  AWS_REGION: ap-southeast-1 
+
 jobs:
   Terraform-ci:
     runs-on: ubuntu-latest
