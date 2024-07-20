@@ -1,7 +1,8 @@
 name: Terraform CD
 
-on: push
-  
+on:
+  push:
+    workflow
 jobs:
   Terraform-cd:
     runs-on: ubuntu-latest
