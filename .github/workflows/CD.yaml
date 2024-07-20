@@ -1,12 +1,13 @@
-name: Terraform CD
-
 on:
   push:
-    workflow
+    branches:
+      - main  # Ensure this matches the branch you want to trigger the workflow on
+
 jobs:
-  Terraform-cd:
+  terraform-cd:
     runs-on: ubuntu-latest
 
+    steps:
     #Terraform Apply
     - name: Terraform Apply
       run: terraform apply --auto-approve
