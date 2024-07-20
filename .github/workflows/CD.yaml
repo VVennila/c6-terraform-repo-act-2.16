@@ -24,7 +24,10 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       with:
         terraform_version: 1.8.5  # Use the appropriate Terraform version
-
+      
+    - name: List files in the working directory
+      run: ls -la
+      
     - name: Terraform Init
       run: terraform init
 
